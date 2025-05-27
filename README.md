@@ -1,0 +1,1 @@
+Somos uma equipe feminina dedicada a transformar a experiência gastronômica com inovação, praticidade e humanização. Nosso objetivo é conectar clientes e restaurantes de forma eficiente, garantindo satisfação em cada pedido e suporte completo para os estabelecimentos.
