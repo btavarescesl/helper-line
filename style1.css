@@ -1,0 +1,261 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Montserrat', Arial, sans-serif;
+    height: 100%;
+    background-color: #fdfaf6;
+    background-image: url('https://i.imgur.com/XULlMPG.png');
+    background-attachment: fixed;
+    background-repeat: repeat; 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #610B0B;
+}
+header { 
+    background-color: #610B0B;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.barra-superior-esquerda span {
+    font-weight: 700; 
+}
+.navegacao-superior a,
+.barra-superior-direita a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 700;
+    transition: text-decoration 0.2s;
+}
+.navegacao-superior a {
+    margin: 0 10px;
+}
+.barra-superior-direita a {
+    margin-left: 5px;
+}
+.navegacao-superior a:hover,
+.barra-superior-direita a:hover {
+    text-decoration: underline;
+}
+.separador {
+    color: #fff;
+    margin: 0 5px; 
+    font-size: 0.85em; 
+    font-weight: 700;
+}
+main { 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+.secao-logo {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.secao-logo .desde-texto {
+    font-size: 1.2em;
+    color: #610B0B;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.secao-logo .nome-marca {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    color: #610B0B;
+    margin: 5px 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+}
+.secao-logo .slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #610B0B;
+    font-style: italic;
+    font-weight: 400;
+}
+.texto-boas-vindas {
+    font-size: 1.3em;
+    color: #610B0B;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.caixas-login {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.caixa-login {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.caixa-login h2 {
+    color: #610B0B;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.caixa-login label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #610B0B;
+    text-align: left;
+    font-weight: 400;
+}
+.caixa-login input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1.5px solid #610B0B;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #610B0B;
+}
+.caixa-login .esqueceu-senha {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    margin: -10px 0 20px;
+    color: #610B0B;
+    text-decoration: none;
+    font-weight: 400;
+}
+.caixa-login .esqueceu-senha:hover {
+    text-decoration: underline;
+}
+.caixa-login button {
+    width: 100%;
+    padding: 8px;
+    background: #610B0B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.nao-tem-cadastro {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #610B0B;
+    font-weight: 400;
+}
+.nao-tem-cadastro a {
+    color: #610B0B;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.nao-tem-cadastro a:hover {
+    color: #333;
+}
+footer { 
+    background-color: #610B0B;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+.contato-footer { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    gap: 8px;
+    color: #fff; 
+}
+.contato-footer img {
+    display: block;
+    width: 22px;
+    height: auto;
+}
+.politicas-footer { 
+    flex: 1; 
+    text-align: center;
+
+}
+.politicas-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.politicas-footer a:hover {
+    text-decoration: underline;
+}
+.copyright-footer span { 
+    color: #fff;
+}
+@media (max-width: 900px) {
+    header { 
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .navegacao-superior {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navegacao-superior a {
+        margin: 5px 0;
+    }
+    .barra-superior-direita {
+        margin-top: 10px;
+    }
+    .secao-logo .nome-marca {
+        font-size: 32px;
+    }
+    .secao-logo .slogan {
+        font-size: 18px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .contato-footer, 
+    .politicas-footer,
+    .copyright-footer {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        justify-content: center; 
+    }
+    .politicas-footer {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}
